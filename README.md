@@ -75,45 +75,33 @@
     code Bash
 
     
-git clone https://github.com/ВАШ_НИК/ВАШ_РЕПОЗИТОРИЙ.git
+gh repo clone phsquad/NoGrishaPublick
 cd ВАШ_РЕПОЗИТОРИЙ
 
   
 
 Установите зависимости:
-code Bash
 
-    
 pip install -r requirements.txt
-
   
-
 (Не забудьте создать requirements.txt файл: pip freeze > requirements.txt)
 
 Настройте переменные окружения:
 Создайте файл .env или настройте переменные на вашем хостинге:
 code Env
 
-    
 # Токен вашего бота от @BotFather
 TOKEN="12345:ABC-DEF1234ghIkl-zyx57W2v1u123ew11"
-
 # URL вашего вебхука (например, от Render)
 WEBHOOK_URL="https://your-app-name.onrender.com"
-
 # Строка подключения к вашей базе данных PostgreSQL
 DATABASE_URL="postgresql://user:password@host:port/database"
-
 # ID группового чата, где работает бот
 GROUP_CHAT_ID="-100123456789"
-
 # Список администраторов через запятую (по юзернеймам)
 ADMIN_USERNAMES_LIST="admin1,admin2"
-
 # Список администраторов через запятую (по ID)
 ADMIN_IDS_LIST="12345678,87654321"
-
-  
 
 Запустите бота:
 Бот использует Flask для вебхуков, поэтому рекомендуется запускать его через Gunicorn:
