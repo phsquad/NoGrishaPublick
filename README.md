@@ -71,11 +71,11 @@
 Хотите запустить свою версию бота? Это просто!
 
     Клонируйте репозиторий:
-    code Bash
+   gh repo clone phsquad/NoGrishaPublick
 
     
-gh repo clone phsquad/NoGrishaPublick
-cd ВАШ_РЕПОЗИТОРИЙ
+
+cd phsquad/NoGrishaPublick
 
   
 
